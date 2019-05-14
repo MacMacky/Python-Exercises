@@ -30,7 +30,7 @@ def reverseAString(string=""):
     for char in listo:
         reversedStr += char
     return reversedStr
-  
+
 
 def reverseAString2(string=""):
     return string[::-1]
@@ -39,6 +39,12 @@ def reverseAString2(string=""):
 def reverseAString3(string=""):
     return "".join(reversed(string))
 
+
 def isTandemRepeat(string=""):
     half = len(string)//2
     return string[0:half] == string[half:len(string)]
+
+
+def allLongestStrings(arr=[]):
+    maxLen = max([len(string) for string in arr])
+    return [string for string in arr if len(string) == maxLen]

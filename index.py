@@ -1,7 +1,12 @@
-from algos.challenges_100 import allLongestStrings, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
+from algos.challenges_100 import allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
 from algos.others import splitString
 from helpers.helpers import test, describe
 
+
+test("largestOfFour", largestOfFour(
+    [[1, 2, 3, 4], [5, 4, 3, 2], [5, 4, 3, 2], [5, 4, 3, 2]]), [4, 5, 5, 5])
+test("largestOfFour", largestOfFour(
+    [[1, 2, 3, 4], [5, 4, 3, 2], [10, 11, 15, 20], [1, 2, 3, 4]]), [4, 5, 20, 4])
 test("arrayReplace", arrayReplace([], 5, 5), [])
 test("arrayReplace", arrayReplace([5, 4, 3, 2, 1], 5, 4), [4, 4, 3, 2, 1])
 test("allLongestStrings", allLongestStrings(["aaabbb", "", "c"]), ["aaabbb"])

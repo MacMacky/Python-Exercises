@@ -54,3 +54,7 @@ def arrayReplace(arr=[], elementToReplace=0, substitutionElement=0):
     if len(arr) == 0 or arr == None:
         return []
     return [(substitutionElement if el == elementToReplace else el) for el in arr]
+
+
+def largestOfFour(arrays=[[]]):
+    return [max(arr) for arr in arrays]

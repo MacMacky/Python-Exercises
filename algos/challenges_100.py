@@ -66,3 +66,7 @@ def confirmEnding(string="", target=""):
 
 def largestNumber(n=1):
     return 9 if n == 1 else int("9" * n)
+
+
+def properNounCorrection(noun=""):
+    return noun if noun.istitle() else (noun[0].upper() + noun[1:].lower())

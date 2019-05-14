@@ -1,7 +1,10 @@
-from algos.challenges_100 import largestNumber, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
+from algos.challenges_100 import largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
 from algos.others import splitString
 from helpers.helpers import test, describe
 
+
+test("properNounCorrection", properNounCorrection("mark"), "Mark")
+test("properNounCorrection", properNounCorrection("John"), "John")
 test("largestNumber", largestNumber(1), 9)
 test("largestNumber", largestNumber(2), 99)
 test("confirmEnding", confirmEnding("Abstration", "action"), False)

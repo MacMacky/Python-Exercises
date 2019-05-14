@@ -62,3 +62,7 @@ def largestOfFour(arrays=[[]]):
 
 def confirmEnding(string="", target=""):
     return True if string.find(target) >= 0 else False
+
+
+def largestNumber(n=1):
+    return 9 if n == 1 else int("9" * n)

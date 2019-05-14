@@ -1,8 +1,9 @@
-from algos.challenges_100 import confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
+from algos.challenges_100 import largestNumber, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
 from algos.others import splitString
 from helpers.helpers import test, describe
 
-
+test("largestNumber", largestNumber(1), 9)
+test("largestNumber", largestNumber(2), 99)
 test("confirmEnding", confirmEnding("Abstration", "action"), False)
 test("confirmEnding", confirmEnding("Abstraction", "action"), True)
 test("largestOfFour", largestOfFour(

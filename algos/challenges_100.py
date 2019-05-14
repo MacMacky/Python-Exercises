@@ -48,3 +48,9 @@ def isTandemRepeat(string=""):
 def allLongestStrings(arr=[]):
     maxLen = max([len(string) for string in arr])
     return [string for string in arr if len(string) == maxLen]
+
+
+def arrayReplace(arr=[], elementToReplace=0, substitutionElement=0):
+    if len(arr) == 0 or arr == None:
+        return []
+    return [(substitutionElement if el == elementToReplace else el) for el in arr]

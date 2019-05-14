@@ -1,7 +1,9 @@
-from algos.challenges_100 import allLongestStrings, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
+from algos.challenges_100 import allLongestStrings, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
 from algos.others import splitString
 from helpers.helpers import test, describe
 
+test("arrayReplace", arrayReplace([], 5, 5), [])
+test("arrayReplace", arrayReplace([5, 4, 3, 2, 1], 5, 4), [4, 4, 3, 2, 1])
 test("allLongestStrings", allLongestStrings(["aaabbb", "", "c"]), ["aaabbb"])
 test("allLongestStrings", allLongestStrings(["aaa", "bbb"]), ["aaa", "bbb"])
 test("reverseAString3", reverseAString3("abc"), "cba")

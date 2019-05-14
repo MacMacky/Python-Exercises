@@ -58,3 +58,7 @@ def arrayReplace(arr=[], elementToReplace=0, substitutionElement=0):
 
 def largestOfFour(arrays=[[]]):
     return [max(arr) for arr in arrays]
+
+
+def confirmEnding(string="", target=""):
+    return True if string.find(target) >= 0 else False

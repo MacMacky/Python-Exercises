@@ -30,6 +30,10 @@ def reverseAString(string=""):
     for char in listo:
         reversedStr += char
     return reversedStr
+  
+
+def reverseAString2(string=""):
+    return string[::-1]
 
 
 def isTandemRepeat(string=""):

@@ -36,6 +36,9 @@ def reverseAString2(string=""):
     return string[::-1]
 
 
+def reverseAString3(string=""):
+    return "".join(reversed(string))
+
 def isTandemRepeat(string=""):
     half = len(string)//2
     return string[0:half] == string[half:len(string)]

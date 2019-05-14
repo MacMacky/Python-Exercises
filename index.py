@@ -1,9 +1,12 @@
-from algos.challenges_100 import allLongestStrings, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat,reverseAString2
+from algos.challenges_100 import allLongestStrings, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat,reverseAString2,reverseAString3
 from algos.others import splitString
 from helpers.helpers import test
 
-test("reverseAString2", reverseAString2("abcd"), "dcba")
+test("reverseAString3", reverseAString3("abc"), "cba")
+test("reverseAString3", reverseAString3("abcd"), "dcba")
 test("reverseAString2", reverseAString2("abc"), "cba")
+test("reverseAString2", reverseAString2("abcd"), "dcba")
+test("reverseAString", reverseAString("abc"), "cba")
 test("isTandemRepeat", isTandemRepeat("abc"), False)
 test("isTandemRepeat", isTandemRepeat("tandemtandem"), True)
 test("reverseAString", reverseAString("abc"), "cba")

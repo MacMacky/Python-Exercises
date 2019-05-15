@@ -1,8 +1,10 @@
-from algos.challenges_100 import largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
+from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
 from algos.others import splitString
 from helpers.helpers import test, describe
 
-
+test("domainTypes", domainTypes(["sure.org", "yj.con", "amawa.con"]), [
+     "organization", "not recognized", "not recognized"])
+test("domainTypes", domainTypes(["aamawa.ss.com"]), ["company"])
 test("properNounCorrection", properNounCorrection("mark"), "Mark")
 test("properNounCorrection", properNounCorrection("John"), "John")
 test("largestNumber", largestNumber(1), 9)

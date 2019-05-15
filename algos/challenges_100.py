@@ -70,3 +70,25 @@ def largestNumber(n=1):
 
 def properNounCorrection(noun=""):
     return noun if noun.istitle() else (noun[0].upper() + noun[1:].lower())
+
+
+def domainTypes(domains=[]):
+    length = len(domains)
+    if length == 0 or domains is None:
+        return []
+    else:
+        result = []
+        table = {
+            "info": "information",
+            "org": "organization",
+            "com": "company",
+            "net": "network"
+        }
+        for domain in domains:
+            arr = domain.split('.')
+            try:
+                result.append(table[arr[len(arr)-1]])
+            except KeyError as e:
+                result.append("not recognized")
+                continue
+        return result

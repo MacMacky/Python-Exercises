@@ -1,7 +1,9 @@
-from algos.challenges_100 import domain_types, sum_all_primes, is_prime, chunk_monkey, largest_number, proper_noun_correction, confirm_ending, all_longest_strings, largest_of_four, array_replace, even_digits_only, factorialize_a_number, reverse_a_string, is_tandem_repeat, reverse_a_string2, reverse_a_string3, add_two_digits, add_numbers, check_palindrome, find_max
+from algos.challenges_100 import domain_types, first_duplicate, sum_all_primes, is_prime, chunk_monkey, largest_number, proper_noun_correction, confirm_ending, all_longest_strings, largest_of_four, array_replace, even_digits_only, factorialize_a_number, reverse_a_string, is_tandem_repeat, reverse_a_string2, reverse_a_string3, add_two_digits, add_numbers, check_palindrome, find_max
 from algos.others import splitString
 from helpers.helpers import test, describe
 
+test("first_duplicate", first_duplicate([2, 3, 4, 5, 1]), -1)
+test("first_duplicate", first_duplicate([2, 1, 3, 5, 3, 2]), 3)
 test("sum_all_primes", sum_all_primes(4), 5)
 test("sum_all_primes", sum_all_primes(5), 10)
 test("is_prime", is_prime(5), True)

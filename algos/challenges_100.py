@@ -141,3 +141,16 @@ def sum_all_primes(num=0):
         return 0
     else:
         return sum([x for x in range(0, num+1) if is_prime(x)])
+
+
+def first_duplicate(arr=[]):
+    if len(arr) == 0:
+        return -1
+    else:
+        table = {}
+        for num in arr:
+            if num in table:
+                return num
+            else:
+                table[num] = num
+        return -1

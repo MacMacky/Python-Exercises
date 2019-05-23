@@ -111,3 +111,13 @@ def check_palindrome(string=""):
 
 def find_max(arr=[]):
     return max(arr)
+
+
+def chunk_monkey(arr=[], size=1):
+    if len(arr) == 0 or size is None:
+        return 0
+    else:
+        chunk_arr = []
+        for i in range(0, len(arr), size):
+            chunk_arr.append([item for item in arr[i:i+size]])
+        return chunk_arr

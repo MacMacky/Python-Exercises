@@ -99,3 +99,7 @@ def addTwoDigits(num=0):
         return 0
     else:
         return sum([int(char) for char in list(str(num))])
+
+
+def addNumbers(*args):
+    return sum(args)

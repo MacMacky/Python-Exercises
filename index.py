@@ -1,8 +1,13 @@
-from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3, addTwoDigits, addNumbers
+from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3, addTwoDigits, addNumbers, checkPalindrome
 from algos.others import splitString
 from helpers.helpers import test, describe
 
 
+test("checkPalindrome", checkPalindrome("racecar"), True)
+test("checkPalindrome", checkPalindrome("abac"), False)
+test("checkPalindrome", checkPalindrome("aba"), True)
+test("addNumbers", addNumbers(6), 6)
+test("addNumbers", addNumbers(1, 2, 3), 6)
 test("addNumbers", addNumbers(6), 6)
 test("addNumbers", addNumbers(1, 2, 3), 6)
 test("addTwoDigits", addTwoDigits("11"), 0)

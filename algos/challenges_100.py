@@ -103,3 +103,7 @@ def addTwoDigits(num=0):
 
 def addNumbers(*args):
     return sum(args)
+
+
+def checkPalindrome(string=""):
+    return reverseAString2(string) == string

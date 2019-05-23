@@ -130,7 +130,14 @@ def is_prime(num=0):
         return True
     else:
         half = num // 2
-        for i in range(2, half):
+        for i in range(2, half+1):
             if (num % i) == 0:
                 return False
         return True
+
+
+def sum_all_primes(num=0):
+    if num == 0 or num == 1 or num is None:
+        return 0
+    else:
+        return sum([x for x in range(0, num+1) if is_prime(x)])

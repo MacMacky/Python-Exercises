@@ -1,11 +1,15 @@
-from algos.challenges_100 import domain_types, chunk_monkey, largest_number, proper_noun_correction, confirm_ending, all_longest_strings, largest_of_four, array_replace, even_digits_only, factorialize_a_number, reverse_a_string, is_tandem_repeat, reverse_a_string2, reverse_a_string3, add_two_digits, add_numbers, check_palindrome, find_max
+from algos.challenges_100 import domain_types, is_prime, chunk_monkey, largest_number, proper_noun_correction, confirm_ending, all_longest_strings, largest_of_four, array_replace, even_digits_only, factorialize_a_number, reverse_a_string, is_tandem_repeat, reverse_a_string2, reverse_a_string3, add_two_digits, add_numbers, check_palindrome, find_max
 from algos.others import splitString
 from helpers.helpers import test, describe
 
 
-
-test("chunk_monkey",chunk_monkey([1, 2, 3, 4], 2),[[1,2],[3,4]])
-test("chunk_monkey",chunk_monkey([1, 2, 3, 4], 3),[[1,2,3],[4]])
+test("is_prime", is_prime(5), True)
+test("is_prime", is_prime(2), True)
+test("is_prime", is_prime(0), False)
+test("is_prime", is_prime(1), False)
+test("is_prime", is_prime(), False)
+test("chunk_monkey", chunk_monkey([1, 2, 3, 4], 2), [[1, 2], [3, 4]])
+test("chunk_monkey", chunk_monkey([1, 2, 3, 4], 3), [[1, 2, 3], [4]])
 test("find_max", find_max([1, 2, 3]), 3)
 test("find_max", find_max([0, 5, 4, 1, 2]), 5)
 test("check_palindrome", check_palindrome("racecar"), True)

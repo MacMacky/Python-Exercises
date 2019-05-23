@@ -121,3 +121,16 @@ def chunk_monkey(arr=[], size=1):
         for i in range(0, len(arr), size):
             chunk_arr.append([item for item in arr[i:i+size]])
         return chunk_arr
+
+
+def is_prime(num=0):
+    if num == 0 or num == 1 or num is None:
+        return False
+    elif num == 2 or num == 3:
+        return True
+    else:
+        half = num // 2
+        for i in range(2, half):
+            if (num % i) == 0:
+                return False
+        return True

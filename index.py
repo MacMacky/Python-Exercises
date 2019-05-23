@@ -1,7 +1,10 @@
-from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3
+from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3, addTwoDigits
 from algos.others import splitString
 from helpers.helpers import test, describe
 
+
+test("addTwoDigits", addTwoDigits("11"), 0)
+test("addTwoDigits", addTwoDigits(53), 8)
 test("domainTypes", domainTypes(["sure.org", "yj.con", "amawa.con"]), [
      "organization", "not recognized", "not recognized"])
 test("domainTypes", domainTypes(["aamawa.ss.com"]), ["company"])

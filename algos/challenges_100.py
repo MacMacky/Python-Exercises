@@ -92,3 +92,10 @@ def domainTypes(domains=[]):
                 result.append("not recognized")
                 continue
         return result
+
+
+def addTwoDigits(num=0):
+    if type(num) is not int:
+        return 0
+    else:
+        return sum([int(char) for char in list(str(num))])

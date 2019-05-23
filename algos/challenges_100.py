@@ -107,3 +107,7 @@ def addNumbers(*args):
 
 def checkPalindrome(string=""):
     return reverseAString2(string) == string
+
+
+def findMax(arr=[]):
+    return max(arr)

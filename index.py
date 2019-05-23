@@ -1,8 +1,10 @@
-from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3, addTwoDigits, addNumbers, checkPalindrome
+from algos.challenges_100 import domainTypes, largestNumber, properNounCorrection, confirmEnding, allLongestStrings, largestOfFour, arrayReplace, evenDigitsOnly, factorializeANumber, reverseAString, isTandemRepeat, reverseAString2, reverseAString3, addTwoDigits, addNumbers, checkPalindrome, findMax
 from algos.others import splitString
 from helpers.helpers import test, describe
 
 
+test("findMax", findMax([1, 2, 3]), 3)
+test("findMax", findMax([0, 5, 4, 1, 2]), 5)
 test("checkPalindrome", checkPalindrome("racecar"), True)
 test("checkPalindrome", checkPalindrome("abac"), False)
 test("checkPalindrome", checkPalindrome("aba"), True)

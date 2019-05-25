@@ -21,4 +21,8 @@ def extra_end(string=""):
     return string[lengtho-2:lengtho] * 3
 
 
-print(extra_end('ab'))
+def first_two(string=""):
+    return string[0:2]
+
+
+print(first_two('Hello'))

@@ -29,4 +29,13 @@ def common_end(a=[], b=[]):
 def sum3(nums):
     return sum(nums)
 
-print(common_end([1, 2, 3], [1, 3]))
+
+def reverse3(nums=[]):
+    return nums[::-1]
+
+
+def max_end3(nums=[]):
+    return [max(nums) for i in range(3)]
+
+
+print(max_end3([1, 2, 3]))

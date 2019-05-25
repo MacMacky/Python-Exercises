@@ -14,4 +14,15 @@ def sum13(nums=[]):
         return total
 
 
+def has22(nums=[]):
+    lengtho = len(nums)
+    if lengtho == 0:
+        return False
+    else:
+        for i in range(lengtho):
+            if nums[i:i+2] == [2, 2]:
+                return True
+        return False
+
+
 print(sum13([1, 2, 3, 4, 13, 5]))

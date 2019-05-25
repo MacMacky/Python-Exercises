@@ -25,4 +25,6 @@ def has22(nums=[]):
         return False
 
 
-print(sum13([1, 2, 3, 4, 13, 5]))
+def count_evens(nums=[]):
+    return len([num for num in nums if num % 2 == 0])
+#print(centered_average([-10, -4, -2, -4, -2, 0]))

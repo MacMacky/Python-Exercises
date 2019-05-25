@@ -38,4 +38,5 @@ def max_end3(nums=[]):
     return [max(nums) for i in range(3)]
 
 
-print(max_end3([1, 2, 3]))
+def sum2(nums=[]):
+    return sum(nums[0:2])

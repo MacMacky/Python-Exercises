@@ -45,4 +45,12 @@ def non_start(a="", b=""):
     return a[1:] + b[1:]
 
 
-print(non_start("java", "code"))
+def left2(string=""):
+    lenS = len(string)
+    if lenS == 2:
+        return string
+    else:
+        return string[2:lenS] + string[0:2]
+
+
+print(left2("java"))

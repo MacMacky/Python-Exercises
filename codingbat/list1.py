@@ -48,4 +48,8 @@ def middle_way(a=[], b=[]):
     return [a[first_half], b[second_half]]
 
 
-print(middle_way([1, 2, 3], [4, 5, 6]))
+def has23(nums=[]):
+    return True if (2 in nums) or (3 in nums) else False
+
+
+print(has23([4, 5]))

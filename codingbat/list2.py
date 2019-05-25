@@ -27,4 +27,7 @@ def has22(nums=[]):
 
 def count_evens(nums=[]):
     return len([num for num in nums if num % 2 == 0])
-#print(centered_average([-10, -4, -2, -4, -2, 0]))
+
+
+def big_diff(nums):
+    return max(nums) - min(nums)

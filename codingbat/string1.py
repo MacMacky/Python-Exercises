@@ -41,4 +41,8 @@ def combo_string(a="", b=""):
     return b + a + b if lenA > lenB else a + b + a
 
 
-print(combo_string('aaa', 'b'))
+def non_start(a="", b=""):
+    return a[1:] + b[1:]
+
+
+print(non_start("java", "code"))

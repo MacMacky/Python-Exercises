@@ -53,3 +53,15 @@ def love6(a=0, b=0):
 def sorta_sum(a=0, b=0):
     total = abs(a+b)
     return 20 if (total >= 10) and (total <= 19) else total
+
+
+def squirrel_play(temp=0, is_summer=False):
+    if (temp >= 60 and temp <= 90) or (is_summer and ((temp >= 60 and temp <= 100))):
+        return True
+    else:
+        return False
+
+
+print(squirrel_play(70, False))
+print(squirrel_play(95, False))
+print(squirrel_play(95, True))

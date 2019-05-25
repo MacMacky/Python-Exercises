@@ -18,6 +18,13 @@ def caught_speeding(speed=0, is_birthday=False):
         return 2
 
 
-print(caught_speeding(60, False))
-print(caught_speeding(65, False))
-print(caught_speeding(65, True))
+def cigar_party(cigars=0, is_weekend=False):
+    if is_weekend or ((cigars >= 60) and (cigars <= 60)):
+        return True
+    else:
+        return False
+
+
+print(cigar_party(30, False))
+print(cigar_party(50, True))
+print(cigar_party(70, True))

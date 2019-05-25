@@ -29,4 +29,10 @@ def first_half(string=""):
     return string[0:len(string)//2]
 
 
-print(first_half("HelloThere"))
+def without_end(string=""):
+    if len(string) < 2:
+        return ""
+    return string[1:len(string)-1]
+
+
+print(without_end("java"))

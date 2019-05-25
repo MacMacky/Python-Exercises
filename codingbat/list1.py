@@ -35,7 +35,7 @@ def reverse3(nums=[]):
 
 
 def max_end3(nums=[]):
-    return [max(nums) for i in range(3)]
+    return [max(nums[0],nums[len(nums)-1]) for i in range(3)]
 
 
 def sum2(nums=[]):

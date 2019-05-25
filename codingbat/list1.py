@@ -15,3 +15,15 @@ def same_first_last(nums=[]):
 
 def make_pi():
     return [3, 1, 4]
+
+
+def common_end(a=[], b=[]):
+    lenA = len(a)
+    lenB = len(b)
+    if lenA == 0 or lenB == 0:
+        return False
+    else:
+        return True if (a[0] == b[0] or (a[lenA-1] == b[lenB-1])) else False
+
+
+print(common_end([1, 2, 3], [1, 3]))

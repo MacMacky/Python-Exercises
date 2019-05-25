@@ -26,4 +26,7 @@ def common_end(a=[], b=[]):
         return True if (a[0] == b[0] or (a[lenA-1] == b[lenB-1])) else False
 
 
+def sum3(nums):
+    return sum(nums)
+
 print(common_end([1, 2, 3], [1, 3]))

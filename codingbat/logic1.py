@@ -25,6 +25,15 @@ def cigar_party(cigars=0, is_weekend=False):
         return False
 
 
-print(cigar_party(30, False))
-print(cigar_party(50, True))
-print(cigar_party(70, True))
+def date_fashion(you=0, date=0):
+    if (you >= 8) or (date >= 8):
+        return 2
+    elif (you <= 2) or (date <= 2):
+        return 0
+    else:
+        return 1
+
+
+print(date_fashion(5, 10))
+print(date_fashion(5, 2))
+print(date_fashion(5, 5))

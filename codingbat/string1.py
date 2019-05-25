@@ -35,4 +35,10 @@ def without_end(string=""):
     return string[1:len(string)-1]
 
 
-print(without_end("java"))
+def combo_string(a="", b=""):
+    lenA = len(a)
+    lenB = len(b)
+    return b + a + b if lenA > lenB else a + b + a
+
+
+print(combo_string('aaa', 'b'))

@@ -50,6 +50,6 @@ def love6(a=0, b=0):
         return False
 
 
-print(love6(6, 4))
-print(love6(4, 5))
-print(love6(1, 5))
+def sorta_sum(a=0, b=0):
+    total = abs(a+b)
+    return 20 if (total >= 10) and (total <= 19) else total

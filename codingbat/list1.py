@@ -13,4 +13,5 @@ def same_first_last(nums=[]):
         return True if nums[0:1] == nums[lenN-1:lenN] else False
 
 
-print(same_first_last([1, 2, 4]))
+def make_pi():
+    return [3, 1, 4]

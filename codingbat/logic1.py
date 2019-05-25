@@ -34,6 +34,15 @@ def date_fashion(you=0, date=0):
         return 1
 
 
-print(date_fashion(5, 10))
-print(date_fashion(5, 2))
-print(date_fashion(5, 5))
+def in1to10(n=0, outside_mode=False):
+    if ((n >= 1) and (n <= 10)):
+        return True
+    elif ((n < 1) or (n >= 11)) and outside_mode:
+        return True
+    else:
+        return False
+
+
+print(in1to10(5, False))
+print(in1to10(11, False))
+print(in1to10(11, True))

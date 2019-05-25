@@ -25,4 +25,8 @@ def first_two(string=""):
     return string[0:2]
 
 
-print(first_two('Hello'))
+def first_half(string=""):
+    return string[0:len(string)//2]
+
+
+print(first_half("HelloThere"))

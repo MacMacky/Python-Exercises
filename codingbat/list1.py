@@ -40,3 +40,12 @@ def max_end3(nums=[]):
 
 def sum2(nums=[]):
     return sum(nums[0:2])
+
+
+def middle_way(a=[], b=[]):
+    first_half = len(a) // 2
+    second_half = len(b) // 2
+    return [a[first_half], b[second_half]]
+
+
+print(middle_way([1, 2, 3], [4, 5, 6]))

@@ -43,6 +43,13 @@ def in1to10(n=0, outside_mode=False):
         return False
 
 
-print(in1to10(5, False))
-print(in1to10(11, False))
-print(in1to10(11, True))
+def love6(a=0, b=0):
+    if (a == 6) or (b == 6) or (abs(a+b) == 6) or (abs(a-b) == 6):
+        return True
+    else:
+        return False
+
+
+print(love6(6, 4))
+print(love6(4, 5))
+print(love6(1, 5))

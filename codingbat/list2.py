@@ -31,3 +31,24 @@ def count_evens(nums=[]):
 
 def big_diff(nums):
     return max(nums) - min(nums)
+
+
+def centered_average(nums=[]):
+    maxNum = max(nums)
+    minNum = min(nums)
+    countMin = 0
+    countMax = 0
+    total = 0
+    counto = 0
+    for num in nums:
+        if countMax == 0 and maxNum == num:
+            countMax += 1
+        elif countMin == 0 and minNum == num:
+            countMin += 1
+        else:
+            total += num
+            counto += 1
+    return total // counto
+
+
+print(centered_average([-10, -4, -2, -4, -2, 0]))

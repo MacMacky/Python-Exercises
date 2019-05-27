@@ -17,8 +17,18 @@ def no_teen_sum(a=0, b=0, c=0):
     return fix_teen(a) + fix_teen(b) + fix_teen(c)
 
 
-# print(no_teen_sum(1, 2, 3))
-# print(no_teen_sum(2, 13, 1))
-# print(no_teen_sum(2, 1, 14))
-# print(lucky_sum(1, 2, 13))
-# print(lucky_sum(1, 13, 3))
+def round10(num=0):
+    remainder = num % 10
+    if remainder < 5:
+        return num - remainder
+    else:
+        return (num-remainder) + 10
+
+
+def round_sum(a=0, b=0, c=0):
+    return round10(a) + round10(b) + round10(c)
+    # print(no_teen_sum(1, 2, 3))
+    # print(no_teen_sum(2, 13, 1))
+    # print(no_teen_sum(2, 1, 14))
+    # print(lucky_sum(1, 2, 13))
+    # print(lucky_sum(1, 13, 3))

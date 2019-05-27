@@ -27,8 +27,7 @@ def round10(num=0):
 
 def round_sum(a=0, b=0, c=0):
     return round10(a) + round10(b) + round10(c)
-    # print(no_teen_sum(1, 2, 3))
-    # print(no_teen_sum(2, 13, 1))
-    # print(no_teen_sum(2, 1, 14))
-    # print(lucky_sum(1, 2, 13))
-    # print(lucky_sum(1, 13, 3))
+
+
+def lone_sum(a=0, b=0, c=0):
+    return 0 if (a == b == c) else a if (b == c) else b if (a == c) else c if (a==b) else a+b+c

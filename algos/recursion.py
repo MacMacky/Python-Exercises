@@ -11,3 +11,7 @@ def is_palindrome(string=""):
             return is_palindrome(string[1:length-1])
         else:
             return False
+
+
+def power(base=1, exponent=1):
+    return base if exponent == 1 else base * power(base, exponent-1)

@@ -15,3 +15,7 @@ def is_palindrome(string=""):
 
 def power(base=1, exponent=1):
     return base if exponent == 1 else base * power(base, exponent-1)
+
+
+def product_of_array(arr=[]):
+    return arr[0] if len(arr) == 1 else arr[0] * product_of_array(arr[1:])

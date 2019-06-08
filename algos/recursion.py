@@ -19,3 +19,14 @@ def power(base=1, exponent=1):
 
 def product_of_array(arr=[]):
     return arr[0] if len(arr) == 1 else arr[0] * product_of_array(arr[1:])
+
+
+def flatten_array(arr=[[]]):
+    lengtho = len(arr)
+    flatten_arr = []
+    for item in arr:
+        if type(item) == list:
+            flatten_arr.extend(flatten_array(item))
+        else:
+            flatten_arr.append(item)
+    return flatten_arr

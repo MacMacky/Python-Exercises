@@ -30,3 +30,7 @@ def flatten_array(arr=[[]]):
         else:
             flatten_arr.append(item)
     return flatten_arr
+
+
+def bunny_ears(bunnies):
+    return 0 if bunnies == 0 else 2 + bunny_ears(bunnies-1)

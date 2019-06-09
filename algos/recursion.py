@@ -55,3 +55,13 @@ def count_abc(string=""):
 
 def all_star(string=""):
     return string if len(string) <= 1 else string[0] + '*' + all_star(string[1:])
+
+
+def no_x(string=""):
+    if len(string) == 0:
+        return ""
+    else:
+        if string[0].lower() == 'x':
+            return no_x(string[1:])
+        else:
+            return string[0] + no_x(string[1:])

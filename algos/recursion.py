@@ -43,3 +43,11 @@ def count_7(num=0):
     else:
         remainder = num % 10
         return 1 + count_7(num//10) if remainder == 7 else count_7(num//10)
+
+
+def count_abc(string=""):
+    if len(string) == 0:
+        return 0
+    else:
+        sub = string[0:3]
+        return 1 + count_abc(string[1:]) if sub == 'abc' or sub == 'aba' else count_abc(string[1:])

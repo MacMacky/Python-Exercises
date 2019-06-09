@@ -51,3 +51,7 @@ def count_abc(string=""):
     else:
         sub = string[0:3]
         return 1 + count_abc(string[1:]) if sub == 'abc' or sub == 'aba' else count_abc(string[1:])
+
+
+def all_star(string=""):
+    return string if len(string) <= 1 else string[0] + '*' + all_star(string[1:])

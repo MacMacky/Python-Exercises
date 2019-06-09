@@ -1,6 +1,6 @@
 from algos.others import splitString
 from helpers.helpers import test, describe
-from algos.recursion import factorial, is_palindrome, power, product_of_array, flatten_array, bunny_ears, count_7, count_abc
+from algos.recursion import factorial, is_palindrome, power, product_of_array, flatten_array, bunny_ears, count_7, count_abc, all_star
 from algos.challenges_100 import domain_types, first_duplicate, sum_all_primes, is_prime, chunk_monkey, largest_number, proper_noun_correction, confirm_ending, all_longest_strings, largest_of_four, array_replace, even_digits_only, factorialize_a_number, reverse_a_string, is_tandem_repeat, reverse_a_string2, reverse_a_string3, add_two_digits, add_numbers, check_palindrome, find_max
 
 test('factorial_recursion', factorial(5), 120)
@@ -20,6 +20,9 @@ test('count_7_recursion', count_7(12377), 2)
 test('count_7_recursion', count_7(123), 0)
 test('count_abc_recursion', count_abc('abc'), 1)
 test('count_abc_recursion', count_abc('abcxxabc'), 2)
+test('all_star_recursion', all_star('abc'), 'a*b*c')
+test('all_star_recursion', all_star('123456'), '1*2*3*4*5*6')
+
 
 # test("first_duplicate", first_duplicate([2, 3, 4, 5, 1]), -1)
 # test("first_duplicate", first_duplicate([2, 1, 3, 5, 3, 2]), 3)

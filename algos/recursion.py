@@ -34,3 +34,12 @@ def flatten_array(arr=[[]]):
 
 def bunny_ears(bunnies):
     return 0 if bunnies == 0 else 2 + bunny_ears(bunnies-1)
+
+
+def count_7(num=0):
+    lengtho = len(str(num))
+    if lengtho == 1:
+        return 1 if num == 7 else 0
+    else:
+        remainder = num % 10
+        return 1 + count_7(num//10) if remainder == 7 else count_7(num//10)
